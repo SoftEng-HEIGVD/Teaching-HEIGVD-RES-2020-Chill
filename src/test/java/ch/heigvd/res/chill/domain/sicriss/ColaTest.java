@@ -21,7 +21,7 @@ public class ColaTest
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForBoxer()
+    void aBartenderShouldAcceptAnOrderForCola()
     {
         Bartender patrick = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.sicriss.Cola";
