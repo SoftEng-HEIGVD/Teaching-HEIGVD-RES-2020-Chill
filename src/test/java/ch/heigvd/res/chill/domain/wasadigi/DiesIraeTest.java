@@ -20,7 +20,7 @@ class DiesIraeTest
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForLaFranche()
+    void aBartenderShouldAcceptAnOrderForDiesIrae()
     {
         Bartender jane = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.wasadigi.DiesIrae";
