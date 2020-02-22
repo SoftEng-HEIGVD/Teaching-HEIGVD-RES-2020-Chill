@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class DiesIraeTest
 {
     @Test
-    void thePriceAndNameForLaCorneShouldBeCorrect()
+    void thePriceAndNameForDiesIraeShouldBeCorrect()
     {
         DiesIrae beer = new DiesIrae();
         assertEquals(beer.getName(), DiesIrae.NAME);
