@@ -2,9 +2,11 @@ package ch.heigvd.res.chill.domain;
 
 import java.math.BigDecimal;
 
-public interface IProduct {
+public interface IProduct
+{
 
-  String getName();
-  BigDecimal getPrice();
+    String getName();
+
+    BigDecimal getPrice();
 
 }
