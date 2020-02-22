@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.clarfleu;
+package ch.heigvd.res.chill.domain.ClarFleu;
 
 import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.protocol.OrderRequest;
@@ -20,7 +20,7 @@ class FinDuMondeTest {
     @Test
     void aBartenderShouldAcceptAnOrderForFinDuMonde() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.clarfleu.FinDuMonde";
+        String productName = "ch.heigvd.res.chill.domain.ClarFleu.FinDuMonde";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = FinDuMonde.PRICE.multiply(new BigDecimal(3));

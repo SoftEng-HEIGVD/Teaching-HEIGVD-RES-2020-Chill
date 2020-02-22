@@ -1,6 +1,7 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.ClarFleu;
 
 import ch.heigvd.res.chill.domain.Bartender;
+import ch.heigvd.res.chill.domain.ClarFleu.Kwak;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -20,7 +21,7 @@ class KwakTest {
     @Test
     void aBartenderShouldAcceptAnOrderForKwak() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.Kwak";
+        String productName = "ch.heigvd.res.chill.domain.ClarFleu.Kwak";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = Kwak.PRICE.multiply(new BigDecimal(3));
