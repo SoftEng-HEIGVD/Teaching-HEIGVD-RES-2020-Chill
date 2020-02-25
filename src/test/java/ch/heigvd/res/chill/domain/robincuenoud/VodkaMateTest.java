@@ -22,7 +22,7 @@ class VodkaMateTest {
     @Test
     void aBartenderShouldAcceptAnOrderForVodkaMate() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.VodkaMate";
+        String productName = "ch.heigvd.res.chill.domain.robincuenoud.VodkaMate";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = VodkaMate.PRICE.multiply(new BigDecimal(3));
