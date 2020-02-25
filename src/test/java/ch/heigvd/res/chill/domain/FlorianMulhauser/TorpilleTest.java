@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.FlorianMulhauser;
 
 import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.protocol.OrderRequest;
@@ -13,9 +13,9 @@ class TorpilleTest {
 
     @Test
     void thePriceAndNameForBoxerShouldBeCorrect() {
-        Boxer beer = new Boxer();
-        assertEquals(beer.getName(), Boxer.NAME);
-        assertEquals(beer.getPrice(), Boxer.PRICE);
+        Torpille beer = new Torpille();
+        assertEquals(beer.getName(), Torpille.NAME);
+        assertEquals(beer.getPrice(), Torpille.PRICE);
     }
 
     @Test
@@ -24,7 +24,7 @@ class TorpilleTest {
         String productName = "ch.heigvd.res.chill.domain.wasadigi.Torpille";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
-        BigDecimal expectedTotalPrice = Boxer.PRICE.multiply(new BigDecimal(3));
+        BigDecimal expectedTotalPrice = Torpille.PRICE.multiply(new BigDecimal(3));
         assertEquals(expectedTotalPrice, response.getTotalPrice());
     }
 
