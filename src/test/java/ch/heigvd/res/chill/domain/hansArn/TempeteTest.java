@@ -1,6 +1,7 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.hansArn;
 
 import ch.heigvd.res.chill.domain.Bartender;
+import ch.heigvd.res.chill.domain.hansArn.Tempete;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -10,7 +11,6 @@ import java.math.BigDecimal;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TempeteTest {
-
     @Test
     void thePriceAndNameForTempeteShouldBeCorrect() {
         Tempete beer = new Tempete();
@@ -21,7 +21,7 @@ class TempeteTest {
     @Test
     void aBartenderShouldAcceptAnOrderForTempete() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.Tempete";
+        String productName = "ch.heigvd.res.chill.domain.hansArn.Tempete";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = Tempete.PRICE.multiply(new BigDecimal(3));
