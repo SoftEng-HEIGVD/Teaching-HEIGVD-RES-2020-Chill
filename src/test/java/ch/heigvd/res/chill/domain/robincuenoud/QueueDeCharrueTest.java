@@ -22,7 +22,7 @@ class QueueDeCharrueTest {
     @Test   
     void aBartenderShouldAcceptAnOrderForQueueDeCharrue() {
         Bartender maurice = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.QueueDeCharrue";
+        String productName = "ch.heigvd.res.chill.domain.robincuenoud.QueueDeCharrue";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = maurice.order(request);
         BigDecimal expectedTotalPrice = QueueDeCharrue.PRICE.multiply(new BigDecimal(3));
