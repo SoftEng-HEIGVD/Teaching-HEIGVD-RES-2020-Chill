@@ -23,7 +23,7 @@ class DiesIraeTest
     void aBartenderShouldAcceptAnOrderForDiesIrae()
     {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.DiesIrae";
+        String productName = "ch.heigvd.res.chill.domain.GTZL1.DiesIrae";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = DiesIrae.PRICE.multiply(new BigDecimal(3));
