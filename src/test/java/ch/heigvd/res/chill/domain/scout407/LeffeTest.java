@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.scout407;
 
 import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.protocol.OrderRequest;
@@ -21,7 +21,7 @@ class LeffeTest {
     @Test
     void aBartenderShouldAcceptAnOrderForLeffe() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.Leffe";
+        String productName = "ch.heigvd.res.chill.domain.scout407.Leffe";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = Leffe.PRICE.multiply(new BigDecimal(3));
