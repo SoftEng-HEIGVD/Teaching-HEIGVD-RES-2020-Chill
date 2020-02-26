@@ -6,6 +6,9 @@ import ch.heigvd.res.chill.domain.IProduct;
 
 /**
  * Guiness
+ *
+ * @author Serphentas
+ *
  */
 public class Guiness implements IProduct {
     public final static String NAME = "Guiness";
