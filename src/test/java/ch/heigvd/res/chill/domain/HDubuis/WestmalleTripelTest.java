@@ -1,6 +1,7 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.HDubuis;
 
 import ch.heigvd.res.chill.domain.Bartender;
+import ch.heigvd.res.chill.domain.HDubuis.WestmalleTripel;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -20,7 +21,7 @@ class WestmalleTripelTest {
     @Test
     void aBartenderShouldAcceptAnOrderForWestmalleTripel() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.WestmalleTripel";
+        String productName = "ch.heigvd.res.chill.domain.HDubuis.WestmalleTripel";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = WestmalleTripel.PRICE.multiply(new BigDecimal(3));
