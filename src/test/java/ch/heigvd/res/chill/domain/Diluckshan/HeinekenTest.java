@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.Diluckshan;
 
 import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.protocol.OrderRequest;
@@ -21,7 +21,7 @@ class HeinekenTest {
   @Test
   void aBartenderShouldAcceptAnOrderForPunkIPA() {
     Bartender jane = new Bartender();
-    String productName = "ch.heigvd.res.chill.domain.wasadigi.Heineken";
+    String productName = "ch.heigvd.res.chill.domain.Diluckshan.Heineken";
     OrderRequest request = new OrderRequest(3, productName);
     OrderResponse response = jane.order(request);
     BigDecimal expectedTotalPrice = Heineken.PRICE.multiply(new BigDecimal(3));
